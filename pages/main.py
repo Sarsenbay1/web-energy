@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 
-with open('models/XGBRegressor.pkl', 'rb') as f:
+with open('..models/XGBRegressor.pkl', 'rb') as f:
     model = pickle.load(f)
 
 st.set_page_config(page_title='Predict', page_icon='🎰')
