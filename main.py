@@ -16,13 +16,13 @@ d = pd.Timestamp(st.date_input('__Введите дату__'))
 t = st.time_input('__Введите время__')
 
 inp = {
-    'hour': t.hour,
-    'dayofweek': (d.dayofweek + 2) % 7,
-    'quarter': d.quarter,
-    'month': d.month,
-    'year': d.year,
-    'dayofyear': d.dayofyear,
-    'dayofmonth': d.day
+    'час': t.hour,
+    'день недели': (d.dayofweek + 2) % 7,
+    'квартал': d.quarter,
+    'месяц': d.month,
+    'год': d.year,
+    'день в году': d.dayofyear,
+    'день месяца': d.day
 }
 df_inp = pd.DataFrame([inp])
 
